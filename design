@@ -23,9 +23,42 @@
         类模式处理类和子类之间的关系，这些关系通过继承建立，在编译时刻就被确定下来，是一种静态关系
         对象模式处理对象间的关系，这些关系在运行时变化，更具动态性
 
-类之间的关系
-       1.依赖（Dependency）关系
-       依赖关系是一种使用关系，它是对象之间耦合度最弱的一种关联方式。
-       在代码中，某个类的方法通过局部变量、方法的参数或者对静态方法的调用来访问另一个类（被依赖类）中的某些方法来完成一些职责。
+面向对象的设计原则——开闭原则
+开闭原则定义 
+    开闭原则是面向对象的可复用设计的第一块基石，是最重要的面向对象设计原则
+开闭原则：软件实体应当对扩展开放，对修改关闭。
+    Open-Closed Principle (OCP): Software entities should be open for extension, but closed for modification.
+
+里氏代换原则：所有引用基类的地方必须能透明地使用其子类的对象。
+    Liskov Substitution Principle (LSP): Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it.
+    里氏代替原则的实现方法：
+       子类可以扩展父类的功能，但不能改变父类原有的功能。
+
+依赖倒转原则：高层模块不应该依赖低层模块，它们都应该依赖抽象。抽象不应该依赖于细节，细节应该依赖于抽象。
+    Dependency Inversion Principle (DIP): High level modules should not depend upon low level modules, 
+both should depend upon abstractions. Abstractions should not depend upon details, details should depend upon abstractions. 
+
+单一职责原则定义
+单一职责原则是最简单的面向对象设计原则，用于控制类的粒度大小
+单一职责原则：一个对象应该只包含单一的职责，并且该职责被完整地封装在一个类中。
+    Single Responsibility Principle (SRP): Every object should have a single responsibility, and that responsibility should be entirely encapsulated by the class. 
+
+接口隔离原则：客户端不应该依赖那些它不需要的接口。
+    Interface Segregation Principle (ISP): Clients should not be forced to depend upon interfaces that they do not use.
+
+迪米特法则定义
+迪米特法则又称为最少知识原则(Least Knowledge Principle, LKP)
+迪米特法则：每一个软件单位对其他的单位都只有最少的知识，而且局限于那些与本单位密切相关的软件单位。
+    Law of Demeter (LoD): Each unit should have only limited knowledge about other units: only units "closely" related to the current unit.
+
+合成复用原则定义
+    合成复用原则又称为组合/聚合复用原则(Composition/ Aggregate Reuse Principle, CARP)
+    合成复用原则：优先使用对象组合，而不是继承来达到复用的目的。
+    Composite Reuse Principle (CRP)：Favor composition of objects over inheritance as a reuse mechanism.
+
+
+
+
+
 
 
